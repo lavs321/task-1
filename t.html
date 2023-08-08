@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Message</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Message</h1>
+        <form id="userForm">
+            <form style="justify-content:center;">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="color">Select your favorite color:</label>
+            <select id="color" required>
+                <option value=""disabled selected>Select color....</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="purple">purple</option>
+                <!-- Add more color options here if needed -->
+            </select>
+            
+            <div class="buttons">
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="button" id="resetBtn">Reset</button>
+            </div>
+            </form>
+        </form>
+        
+        <div id="message"></div>
+    </div>
+
+    <script src="t.js"></script>
+</body>
+</html>
